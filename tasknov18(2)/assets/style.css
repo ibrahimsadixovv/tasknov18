@@ -1,0 +1,108 @@
+.head{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    margin-left:300px;
+    position: relative;
+}
+
+.eyeL{
+    background-color: rgb(255, 255, 255); 
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: 325px;
+    animation-name: myEyeAnimation;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.eyeR{
+    background-color: rgb(255, 255, 255); 
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: 375px;
+}
+.mouth{
+
+    height: 10px;
+    width: 60px;
+    top: 70px;
+    left: 330px;
+    position: absolute;
+    border-bottom: 8px solid rgb(255, 255, 255);
+    border-radius: 100%;
+
+
+
+}
+
+.body{
+    background-color: rgb(0, 0, 0);
+    height: 300px;
+    width: 100px;
+    position: absolute;
+    top: 120px;
+    left: 310px;
+}
+.armL{
+    background-color: rgb(0, 0, 0);
+    height: 300px;
+    width: 20px;
+    position: absolute;
+    top: 120px;
+    left: 285px;
+}
+.armR{
+    background-color: rgb(0, 0, 0);
+    height: 300px;
+    width: 20px;
+    position: absolute;
+    top: 120px;
+    left: 415px;
+    animation-name: myArmAnimation;
+    animation-duration: 3.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.legL{
+    background-color: rgb(0, 0, 0);
+    height: 300px;
+    width: 20px;
+    position: absolute;
+    top: 430px;
+    left: 320px;
+}
+.legR{
+    background-color: rgb(0, 0, 0);
+    height: 300px;
+    width: 20px;
+    position: absolute;
+    top: 430px;
+    left: 380px;
+}
+@keyframes myEyeAnimation {
+    0%{
+        transform: scale(1, .05);
+     }
+     100%{
+        transform: scale(1, 1);
+     }
+
+
+}
+@keyframes myArmAnimation {
+    from{
+        transform-origin: top right;
+    }
+        to {
+            transform-origin: top right;
+            transform: rotate(-90deg);
+        }
+      }

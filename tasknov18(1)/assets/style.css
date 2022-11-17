@@ -1,0 +1,58 @@
+.card{
+    height: 550px;
+    width: 350px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    position: relative;
+    transition-duration: 0.3s;
+    
+}
+.image{
+    height:250px ;
+    width: 350px;
+    overflow: hidden;
+    position: absolute; 
+}
+img{
+    height:250px ;
+    width: 350px;
+    background: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-cat-wearing-sunglasses-while-sitting-royalty-free-image-1571755145.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;  
+    transition: 0.8s;
+}
+h1{
+    background-color: white;
+   margin-top: 260px;
+   margin-left: 20px;
+   font-size: 40px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.aboutCat{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+}
+.button{
+    height: 40px;
+    width: 100px;
+    border-radius: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(209, 85, 85);
+    border: none;
+}
+.card:hover{
+    box-shadow: 10px 10px 10px rgba(33,33,33,.2); 
+  }
+  img:hover{
+  transform: scale(1.5);
+  cursor: pointer;
+  }
